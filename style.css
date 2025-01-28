@@ -64,7 +64,7 @@ ul {
 
 .navbar nav button:hover {
   cursor: pointer;
-  background: #bdbaba;
+  background: #f8efef;
   color: #f1356d;
 }
 
@@ -107,7 +107,7 @@ ul {
   margin-bottom: 25px;
   letter-spacing: 2px;
   line-height: 40px;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 #hero .heroText button {
@@ -129,19 +129,21 @@ ul {
   box-shadow: 3px 3px 5px #5f5d5d;
 }
 
-#hero .heroText button img {
-  width: 30px;
+#hero .heroText button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
   height: 20px;
-  color: #f1356d;
   padding-left: 10px;
 }
 
-#hero .heroText .socials a:hover {
-  color: #f1356d;
+#hero .heroText .socials i:hover {
+  color: #fdfdfd;
 }
 
-#hero .heroText .socials img {
-  width: 30px;
+#hero .heroText .socials i {
+  width: 29px;
   height: 30px;
   cursor: pointer;
   margin-right: 20px;
@@ -193,9 +195,41 @@ ul {
 
 #about .aboutDetails p {
   width: 100%;
-  margin: 20px 0;
-  font-size: 1.2rem;
+  margin: 10px 0;
+  font-size: 1.5rem;
   line-height: 30px;
+}
+
+#about .aboutDetails .lang {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+#about .aboutDetails .lang i {
+  width: 70px;
+  height: 50px;
+  padding: 0 10px 0 0;
+}
+
+#project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#project div h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f1356d;
 }
 
 #contact {
@@ -213,8 +247,8 @@ ul {
   text-decoration: underline;
   letter-spacing: 2px;
   color: #f1356d;
-  padding-top: 30px ;
-  padding-bottom: 40px ;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 #contact .contactDetails {
@@ -238,7 +272,7 @@ ul {
 }
 
 #contact .contactDetails form div {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,17 +281,24 @@ ul {
 }
 
 #contact .contactDetails form div img {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
 }
 
 #contact .contactDetails form div input {
   width: 80%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #f1356d;
   border-radius: 5px;
+}
+
+#contact .contactDetails form div input:enabled {
+  border: none;
+  box-shadow: 3px 3px 5px #8f5f5f;
 }
 
 #contact .contactDetails form div textarea {
@@ -268,5 +309,32 @@ ul {
   border-radius: 5px;
 }
 
+#contact .contactDetails form div textarea:enabled {
+  border: none;
+  box-shadow: 3px 3px 5px #8f5f5f;
+}
 
+#contact .contactDetails form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1356d;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 10px 0 20px 0;
+}
 
+#contact .contactDetails form button:hover {
+  background: #f8efef;
+  color: #f1356d;
+  box-shadow: 3px 3px 5px rgba(107, 84, 84, 0.5);
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
