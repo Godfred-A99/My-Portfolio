@@ -183,6 +183,8 @@ ul {
   text-decoration: underline;
   letter-spacing: 2px;
   color: #f1356d;
+  animation: fade both 3s;
+  animation-timeline: view(30% 5%);
 }
 
 #about .aboutDetails {
@@ -198,6 +200,8 @@ ul {
   margin: 10px 0;
   font-size: 1.5rem;
   line-height: 30px;
+  animation: fade-in both;
+  animation-timeline: view(70% 5%);
 }
 
 #about .aboutDetails .lang {
@@ -249,6 +253,8 @@ ul {
   color: #f1356d;
   padding-top: 30px;
   padding-bottom: 40px;
+  animation: fade both 3s;
+  animation-timeline: view(30% 5%);
 }
 
 #contact .contactDetails {
@@ -280,7 +286,7 @@ ul {
   padding: 5px 0;
 }
 
-#contact .contactDetails form div img {
+#contact .contactDetails form div i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,4 +343,27 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
